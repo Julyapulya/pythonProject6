@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Tax Parameter</title>
+</head>
+<body>
+<h1>Добавить налоговый параметр</h1>
+    <form method="POST" action="/v1/tax-param/add">
+        <label for="city_id">Код региона:</label>
+        <input type="text" id="city_id"><br><br>
+        <label for="from_hp_car">С какого количества лошадиных сил действует объект налогообложения:</label>
+        <input type="text" id="from_hp_car"><br><br>
+        <label for="to_hp_car">ДО какого количества лошадиных сил действует объект налогообложения:</label>
+        <input type="text" id="to_hp_car"><br><br>
+        <label for="from_production_year_car">С какого года производства автомобиля действует объект налогообложения:</label>
+        <input type="text" id="from_production_year_car"><br><br>
+        <label for="to_production_year_car">ДО какого года производства автомобиля действует объект налогообложения:</label>
+        <input type="text" id="to_production_year_car" ><br><br>
+        <label for="rate">Налоговая ставка:</label>
+        <input type="text" id="rate"><br><br>
+        <input type="submit" value="Добавить налоговый параметр">
+    </form>
+</body>
+</html>

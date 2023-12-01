@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>List of Regions</title>
+</head>
+<body>
+    <h1>Список регионов</h1>
+    <ul>
+        {% for region in regions %}
+        <li>{{ region.name }} - {{ region.id }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

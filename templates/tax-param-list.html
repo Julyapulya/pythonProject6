@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Tax Parameters</title>
+</head>
+<body>
+ <h1>Список объектов налогообложения</h1>
+    <ul>
+        {% for tax_param in tax_params %}
+        <li>Регион код: {{ tax_param.city_id }}, С какого количества лошадиных сил: {{ tax_param.from_hp_car }} - {{ tax_param.to_hp_car }}, С какого года производства автомобиля: {{ tax_param.from_production_year_car }} - {{ tax_param.to_production_year_car }}, Налоговая ставка: {{ tax_param.rate }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
